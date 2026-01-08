@@ -1,0 +1,25 @@
+<%- include('./partials/header') %>
+
+<div class="container mt-4">
+  <h3>| Nova Task</h3>
+
+  <form id="taskForm">
+    <input
+      name="name"
+      class="form-control mb-3"
+      placeholder="Ex: Meditar"
+      required
+    >
+
+    <select name="grid" class="form-select mb-3" required>
+      <option value="">Selecione uma grid</option>
+    </select>
+
+    <button class="btn btn-success">Criar Task</button>
+    <a href="/home" class="btn btn-outline-secondary">Cancelar</a>
+  </form>
+</div>
+
+<script src="/javascripts/tasks.js"></script>
+
+<%- include('./partials/footer') %>

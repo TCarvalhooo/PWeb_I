@@ -1,0 +1,47 @@
+/* ==============================
+   RESET LEVE (opcional)
+   ============================== */
+
+.checkbox-grid {
+  /* força layout em grid */
+  display: grid;
+
+  /* espaçamento entre checkboxes */
+  gap: 4px;
+
+  /* alinhamento */
+  justify-content: start;
+  align-items: center;
+
+  /* evita quebra visual */
+  margin-top: 10px;
+}
+
+/* Checkboxes padronizados */
+.checkbox-grid input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Opcional: hover */
+.checkbox-grid input[type="checkbox"]:hover {
+  transform: scale(1.05);
+}
+
+/* Checkbox marcado */
+.checkbox-grid input[type="checkbox"]:checked {
+  accent-color: #198754; /* verde bootstrap */
+}
+
+/* Card mais compacto */
+.card {
+  border-radius: 10px;
+}
+
+/* Título da grid */
+.card h5 {
+  margin-bottom: 6px;
+}

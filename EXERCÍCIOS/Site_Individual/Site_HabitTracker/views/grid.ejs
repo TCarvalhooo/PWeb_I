@@ -1,0 +1,19 @@
+<%- include('./partials/header') %>
+
+<div class="container mt-4">
+    <a href="/home" class="btn btn-link text-decoration-none text-secondary mt-3">
+    ← Voltar para Home
+  </a>
+  <h3 id="gridTitle"></h3>
+
+  <div id="gridContainer" class="checkbox-grid mt-3"></div>
+
+</div>
+
+<script>
+  const GRID_ID = "<%= gridId %>";
+</script>
+
+<script src="/javascripts/grid.js"></script>
+
+<%- include('./partials/footer') %>

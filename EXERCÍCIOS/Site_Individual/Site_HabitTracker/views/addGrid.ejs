@@ -1,0 +1,31 @@
+<%- include('partials/header') %>
+
+<div class="container mt-4">
+  <a href="/home" class="btn btn-link text-decoration-none text-secondary mt-3">
+    ← Voltar para Home
+  </a>
+  <h1>| Nova Grid</h1>
+
+  <form id="gridForm" class="mb-4">
+    <label class="form-label text-body-secondary">Título</label>
+    <input name="title" class="form-control mb-2" required>
+
+    <div class="row">
+      <div class="col-6">
+        <label class="form-label text-body-secondary">Linhas</label>
+        <input name="rows" type="number" class="form-control" required>
+      </div>
+      <div class="col-6">
+        <label class="form-label text-body-secondary">Colunas</label>
+        <input name="columns" type="number" class="form-control" required>
+      </div>
+    </div>
+
+    <button class="btn btn-success mt-3">Criar Grid</button>
+
+  </form>
+</div>
+
+<script src="/javascripts/grids.js"></script>
+
+<%- include('partials/footer') %>

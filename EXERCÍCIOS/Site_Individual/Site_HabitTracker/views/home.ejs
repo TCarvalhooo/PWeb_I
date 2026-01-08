@@ -1,0 +1,40 @@
+<%- include('./partials/header') %>
+
+<div class="container mt-4">
+  <h3>| Tarefas de Hoje</h3>
+
+  <div class="card p-3 mt-3">
+
+    <div class="card-body" id="taskList">
+      <!-- tarefas entram aqui via JS -->
+    </div>
+
+    <button
+      id="btnAdicionarTarefa"
+      class="btn btn-link text-decoration-none text-secondary"
+      type="button"
+      onclick="location.href='/addTask'"
+    >
+      + Adicionar tarefa
+    </button>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <h3>| Grids</h3>
+
+  <div class="list-group mt-3" id="gridList">
+    <!-- grids entram aqui via JS -->
+  </div>
+
+  <button
+    class="btn btn-link text-decoration-none text-secondary mt-2"
+    onclick="location.href='/addGrid'"
+  >
+    + Adicionar hábitos
+  </button>
+</div>
+
+<script src="/javascripts/home.js"></script>
+
+<%- include('./partials/footer') %>
